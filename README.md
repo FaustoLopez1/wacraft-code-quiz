@@ -1,1 +1,1 @@
-# wacraft-code-quiz
+# warcraft-code-quiz
