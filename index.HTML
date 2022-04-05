@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <title>Warcraft Quiz</title>
+</head>
+
+<body>
+    <header>
+      <div class="subtitle">
+        <h2 class="hoverable-text" onclick="renderHighScores()">
+          View High Scores
+        </h2>
+        <h2 id="timer-el"></h2>
+      </div>
+    </header>
+    <main>
+      <section id="intro" class="intro">
+        <h3>Warcraft Quiz</h3>
+        <ul>
+          <p>Welcome to my timed Warcraft quiz.</p>
+          <p>Try to answer the following warcraft questions within the time limit.</p>
+          <p>Keep in mind that incorrect answers will penalize your scoretime by ten seconds!</p>
+        </ul>
+        <button class="hoverable-button" onclick="beginQuiz()">Start Quiz!</button>
+      </section>
+      <section id="question-card" class="question-card">
+        <h3 id="question-text-el"></h3>
+        <div id="answers-container-el"></div>
+        <div id="question-notification-el"></div>
+        <button
+          id="next-question-button"
+          class="question-submit hoverable-button"
+          onclick="nextQuestion()"
+        >
+          Skip
+        </button>
+      </section>
+      <section id="results" class="results">
+        <p>Number of questions answered correctly:</p>
+        <p id="correct-questions-el"></p>
+        <p>Time Remaining:</p>
+        <p id="time-remaining-el"></p>
+        <p>Final score:</p>
+        <p id="final-score-el"></p>
+        <input
+          type="text"
+          name="initials"
+          id="initials"
+          placeholder="Enter initials"
+          maxlength="3"
+        />
+        <p id="invalid-initials-message">Must contain 3 letters.</p>
+        <button class="hoverable-button" onclick="saveScore()">Save Score</button>
+        <button class="hoverable-button" onclick="pageLoad()">Retake Quiz</button>
+      </section>
+      <section id="high-scores" class="high-scores">
+        <h3>High Scores</h3>
+        <p id="empty-storage-message">
+          There are no scores currently saved.
+        </p>
+        <ol id="high-scores-ol"></ol>
+        <button class="hoverable-button" onclick="pageLoad()">Return to Quiz</button>
+        <button class="hoverable-button" id="clear-scores-button" onclick="clearScores()">Clear Saved Scores</button>
+      </section>
+    </main>
+  </body>
+
+<script src="assets/js/questions.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
