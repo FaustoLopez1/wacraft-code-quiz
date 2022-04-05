@@ -29,9 +29,10 @@ All you need to do is follow the prompt by clicking okay or cancel.
 
 
 ![alt text](https://img.shields.io/badge/Credits-green)
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat
+- https://giphy.com
 - https://choosealicense.com/licenses/mit/#
-- https://stackoverflow.com/questions/14494747/how-to-add-images-to-readme-md-on-github
+- https://faustolopez1.github.io/warcraft-code-quiz/
+- https://github.com/FaustoLopez1/warcraft-code-quiz
 - https://www.w3schools.com/css/css_background.asp
 
 
